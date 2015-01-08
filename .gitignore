@@ -32,7 +32,3 @@
 
 # Composer PHAR
 /composer.phar
-
-# OS
-/.idea/
-.DS_Store
