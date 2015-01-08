@@ -1,0 +1,3 @@
+vvm_cyclovoyageur_homepage:
+    path:     /
+    defaults: { _controller: VVMCyclovoyageurBundle:Home:index }

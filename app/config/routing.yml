@@ -1,0 +1,4 @@
+vvm_cyclovoyageur:
+    resource: "@VVMCyclovoyageurBundle/Resources/config/routing.yml"
+    prefix:   /
+
