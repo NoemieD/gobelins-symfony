@@ -17,8 +17,10 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new VVM\CyclovoyageurBundle\VVMCyclovoyageurBundle(),
+            new VVM\UserBundle\VVMUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
