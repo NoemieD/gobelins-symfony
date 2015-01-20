@@ -1,0 +1,68 @@
+
+html{
+    margin:0;
+    padding:0;
+    background:url("../img/back2.jpg") no-repeat center fixed;
+    background-size:cover;
+}
+
+body{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.login .container-login{
+    margin:15% auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+}
+
+.login .container-login form{
+    left: 50%;
+    margin-left: -16.5%;
+}
+
+input{
+    margin-bottom: 20px;
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    background-color: #ecf0f1;
+}
+h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.register form {
+    width: 300px;
+    margin: auto;
+}
+
+.register form #fos_user_registration_form_email{
+    margin-left:15px;
+}
+
+.register form #fos_user_registration_form_plainPassword_first{
+    margin-left:24px;
+}
+
+.register form #fos_user_registration_form_plainPassword_second{
+    margin-left:37px;
+}
+
+.register form select{
+    margin-left: 95px;
+}
+
+.register form input.btn-warning{
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
