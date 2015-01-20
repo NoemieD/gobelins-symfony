@@ -1,3 +1,7 @@
+vvm_user_user:
+    resource: "@VVMUserBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
 #vvm_user_login:
 #    path:     /login
 #    defaults: { _controller: VVMUserBundle:User:login }
