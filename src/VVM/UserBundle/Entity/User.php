@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="vvm_users")
+ * @ORM\Table(name="user")
  */
 class User extends BaseUser
 {

@@ -1,0 +1,30 @@
+arret:
+    path:     /
+    defaults: { _controller: "VVMCyclovoyageurBundle:Arret:index" }
+
+arret_show:
+    path:     /{id}/show
+    defaults: { _controller: "VVMCyclovoyageurBundle:Arret:show" }
+
+arret_new:
+    path:     /new
+    defaults: { _controller: "VVMCyclovoyageurBundle:Arret:new" }
+
+arret_create:
+    path:     /create
+    defaults: { _controller: "VVMCyclovoyageurBundle:Arret:create" }
+    requirements: { _method: post }
+
+arret_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "VVMCyclovoyageurBundle:Arret:edit" }
+
+arret_update:
+    path:     /{id}/update
+    defaults: { _controller: "VVMCyclovoyageurBundle:Arret:update" }
+    requirements: { _method: post|put }
+
+arret_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "VVMCyclovoyageurBundle:Arret:delete" }
+    requirements: { _method: post|delete }

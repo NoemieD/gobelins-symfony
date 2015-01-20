@@ -1,3 +1,19 @@
+vvm_cyclovoyageur_photo:
+    resource: "@VVMCyclovoyageurBundle/Resources/config/routing/photo.yml"
+    prefix:   /photo
+
+vvm_cyclovoyageur_etape:
+    resource: "@VVMCyclovoyageurBundle/Resources/config/routing/etape.yml"
+    prefix:   /etape
+
+vvm_cyclovoyageur_arret:
+    resource: "@VVMCyclovoyageurBundle/Resources/config/routing/arret.yml"
+    prefix:   /arret
+
+vvm_cyclovoyageur_voyage:
+    resource: "@VVMCyclovoyageurBundle/Resources/config/routing/voyage.yml"
+    prefix:   /voyage
+
 vvm_cyclovoyageur_homepage:
     path:     /
     defaults: { _controller: VVMCyclovoyageurBundle:Home:index }

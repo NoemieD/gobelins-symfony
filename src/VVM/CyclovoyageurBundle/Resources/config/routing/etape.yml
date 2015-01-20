@@ -1,0 +1,30 @@
+etape:
+    path:     /
+    defaults: { _controller: "VVMCyclovoyageurBundle:Etape:index" }
+
+etape_show:
+    path:     /{id}/show
+    defaults: { _controller: "VVMCyclovoyageurBundle:Etape:show" }
+
+etape_new:
+    path:     /new
+    defaults: { _controller: "VVMCyclovoyageurBundle:Etape:new" }
+
+etape_create:
+    path:     /create
+    defaults: { _controller: "VVMCyclovoyageurBundle:Etape:create" }
+    requirements: { _method: post }
+
+etape_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "VVMCyclovoyageurBundle:Etape:edit" }
+
+etape_update:
+    path:     /{id}/update
+    defaults: { _controller: "VVMCyclovoyageurBundle:Etape:update" }
+    requirements: { _method: post|put }
+
+etape_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "VVMCyclovoyageurBundle:Etape:delete" }
+    requirements: { _method: post|delete }
