@@ -25,10 +25,10 @@
                 <td>
                 <ul>
                     <li>
-                        <a href="{{ path('voyage_show', { 'id': entity.id }) }}">show</a>
+                        <a class="btn btn-warning" href="{{ path('voyage_show', { 'id': entity.id }) }}">show</a>
                     </li>
                     <li>
-                        <a href="{{ path('voyage_edit', { 'id': entity.id }) }}">edit</a>
+                        <a class="btn btn-warning" href="{{ path('voyage_edit', { 'id': entity.id }) }}">edit</a>
                     </li>
                 </ul>
                 </td>
@@ -39,7 +39,7 @@
 
         <ul>
         <li>
-            <a href="{{ path('voyage_new') }}">
+            <a class="btn btn-warning" href="{{ path('voyage_new') }}">
                 Create a new entry
             </a>
         </li>
