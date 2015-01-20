@@ -4,14 +4,13 @@
 
 {% block body %}
 
-    <h1>Création d'un voyage </h1>
+    <h1>Pour commencer...</h1>
 
     <div class="home">
-
-        <a href="#" class="btn btn-warning"> Ajouter une Photo </a>
-        <a href="#" class="btn btn-primary"> Créer un Voyage </a>
-        <a href="#" class="btn btn-success"> Créer un Arrêt </a>
-        <a href="#" class="btn btn-danger"> Créer une Etape </a>
+        <a href="{{ path('photo') }}" class="btn btn-warning">Ajouter une Photo</a>
+        <a href="{{ path('arret') }}" class="btn btn-success">Créer un Arrêt</a>
+        <a href="{{ path('etape') }}" class="btn btn-danger">Créer une Etape</a>
+        <a href="{{ path('voyage') }}" class="btn btn-primary">Créer un Voyage</a>
     </div>
 
 {% endblock %}
