@@ -3,7 +3,7 @@
 {% block body -%}
     <h1>Voyage list</h1>
 
-    <table class="records_list">
+    <table class="records_list table table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -23,25 +23,20 @@
                 <td>{% if entity.dateDebut %}{{ entity.dateDebut|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if entity.dateFin %}{{ entity.dateFin|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>
-                <ul>
-                    <li>
+
                         <a class="btn btn-warning" href="{{ path('voyage_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
+
                         <a class="btn btn-warning" href="{{ path('voyage_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
+
             <a class="btn btn-warning" href="{{ path('voyage_new') }}">
                 Create a new entry
             </a>
-        </li>
-    </ul>
+
     {% endblock %}

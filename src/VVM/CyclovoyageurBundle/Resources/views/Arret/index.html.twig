@@ -27,25 +27,20 @@
                 <td>{{ entity.description }}</td>
                 <td>{{ entity.type }}</td>
                 <td>
-                <ul>
-                    <li>
+
                         <a class="btn btn-warning" href="{{ path('arret_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
+
                         <a class="btn btn-warning" href="{{ path('arret_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('arret_new') }}">
+
+            <a class="bnt btn-warning" href="{{ path('arret_new') }}">
                 Create a new entry
             </a>
-        </li>
-    </ul>
+
     {% endblock %}

@@ -21,6 +21,11 @@ body{
     margin: 30px 30px 50px 30px;
 }
 
+.right{
+    float: right;
+    margin-right: 11%;
+}
+
 .login .container-login{
     margin:15% auto;
     padding-top: 40px;

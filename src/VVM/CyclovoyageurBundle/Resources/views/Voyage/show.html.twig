@@ -3,7 +3,7 @@
 {% block body -%}
     <h1>Voyage</h1>
 
-    <table class="record_properties">
+    <table class="record_properties table table-striped">
         <tbody>
             <tr>
                 <th>Id</th>
@@ -28,17 +28,15 @@
         </tbody>
     </table>
 
-        <ul class="record_actions">
-    <li>
+
         <a class="btn btn-warning" href="{{ path('voyage') }}">
             Back to the list
         </a>
-    </li>
-    <li>
+
         <a class="btn btn-warning" href="{{ path('voyage_edit', { 'id': entity.id }) }}">
             Edit
         </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+
+  {{ form(delete_form) }}
+
 {% endblock %}
