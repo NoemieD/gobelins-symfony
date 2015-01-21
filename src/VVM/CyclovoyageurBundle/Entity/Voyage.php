@@ -185,7 +185,7 @@ class Voyage
      */
     public function removeEtape(\VVM\CyclovoyageurBundle\Entity\Etape $etapes)
     {
-        $this->etapes->removeElement($arrets);
+        $this->etapes->removeElement($etapes);
     }
 
     /**
