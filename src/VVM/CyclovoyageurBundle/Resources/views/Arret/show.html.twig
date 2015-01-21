@@ -1,9 +1,9 @@
-{% extends '::base.html.twig'
+{% extends '::base.html.twig' %}
 
 {% block title %}Visualiser un arrêt - {{ parent() }}{% endblock title %}
 
 {% block body -%}
-    <h1>Arret</h1>
+    <h1>Visualiser un arrêt</h1>
 
     <table class="record_properties">
         <tbody>
@@ -12,7 +12,7 @@
                 <td>{{ entity.id }}</td>
             </tr>
             <tr>
-                <th>Name</th>
+                <th>Nom</th>
                 <td>{{ entity.name }}</td>
             </tr>
             <tr>
@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <th>Date</th>
-                <td>{{ entity.date|date('Y-m-d H:i:s') }}</td>
+                <td>{{ entity.date|date('Y-m-d') }}</td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -40,11 +40,11 @@
 
 
         <a class="btn btn-warning" href="{{ path('arret') }}">
-            Back to the list
+            Retour
         </a>
 
         <a class="btn btn-warning" href="{{ path('arret_edit', { 'id': entity.id }) }}">
-            Edit
+            Éditer
         </a>
 
     {{ form(delete_form) }}

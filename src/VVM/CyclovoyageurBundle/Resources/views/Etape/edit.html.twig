@@ -3,13 +3,13 @@
 {% block title %}Éditer une étape - {{ parent() }}{% endblock title %}
 
 {% block body -%}
-    <h1>Etape edit</h1>
+    <h1>Éditer une étape</h1>
 
     {{ form(edit_form) }}
 
 
         <a class="btn btn-warning" href="{{ path('etape') }}">
-            Back to the list
+            Retour
         </a>
 
    {{ form(delete_form) }}

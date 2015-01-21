@@ -16,7 +16,7 @@ class PhotoType extends AbstractType
     {
         $builder
             ->add('url')
-            ->add('alt')
+            ->add('name')
         ;
     }
     

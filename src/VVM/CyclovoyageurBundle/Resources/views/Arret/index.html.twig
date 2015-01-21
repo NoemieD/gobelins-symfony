@@ -3,13 +3,13 @@
 {% block title %}Arrêts - {{ parent() }}{% endblock title %}
 
 {% block body -%}
-    <h1>Arret list</h1>
+    <h1>Liste des arrêts</h1>
 
     <table class="records_list">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
+                <th>Nom</th>
                 <th>Latitude</th>
                 <th>Longitude</th>
                 <th>Date</th>
@@ -25,14 +25,14 @@
                 <td>{{ entity.name }}</td>
                 <td>{{ entity.latitude }}</td>
                 <td>{{ entity.longitude }}</td>
-                <td>{% if entity.date %}{{ entity.date|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.date %}{{ entity.date|date('Y-m-d') }}{% endif %}</td>
                 <td>{{ entity.description }}</td>
                 <td>{{ entity.type }}</td>
                 <td>
 
-                        <a class="btn btn-warning" href="{{ path('arret_show', { 'id': entity.id }) }}">show</a>
+                        <a class="btn btn-warning" href="{{ path('arret_show', { 'id': entity.id }) }}">Voir</a>
 
-                        <a class="btn btn-warning" href="{{ path('arret_edit', { 'id': entity.id }) }}">edit</a>
+                        <a class="btn btn-warning" href="{{ path('arret_edit', { 'id': entity.id }) }}">Éditer</a>
 
                 </td>
             </tr>
@@ -42,7 +42,7 @@
 
 
             <a class="bnt btn-warning" href="{{ path('arret_new') }}">
-                Create a new entry
+                Ajouter un nouvel arrêt
             </a>
 
     {% endblock %}

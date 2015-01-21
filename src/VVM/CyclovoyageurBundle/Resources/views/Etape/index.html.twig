@@ -3,13 +3,13 @@
 {% block title %}Étapes - {{ parent() }}{% endblock title %}
 
 {% block body -%}
-    <h1>Etape list</h1>
+    <h1>Liste des étapes</h1>
 
     <table class="records_list">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
+                <th>Nom</th>
                 <th>Description</th>
                 <th>Actions</th>
             </tr>
@@ -23,10 +23,10 @@
                 <td>
                 <ul>
                     <li>
-                        <a class="btn btn-warning" href="{{ path('etape_show', { 'id': entity.id }) }}">show</a>
+                        <a class="btn btn-warning" href="{{ path('etape_show', { 'id': entity.id }) }}">Voir</a>
                     </li>
                     <li>
-                        <a class="btn btn-warning" href="{{ path('etape_edit', { 'id': entity.id }) }}">edit</a>
+                        <a class="btn btn-warning" href="{{ path('etape_edit', { 'id': entity.id }) }}">Éditer</a>
                     </li>
                 </ul>
                 </td>
@@ -38,7 +38,7 @@
         <ul>
         <li>
             <a href="{{ path('etape_new') }}">
-                Create a new entry
+                Ajouter une étape
             </a>
         </li>
     </ul>

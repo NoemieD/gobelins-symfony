@@ -3,7 +3,7 @@
 {% block title %}Visuliser une étape - {{ parent() }}{% endblock title %}
 
 {% block body -%}
-    <h1>Etape</h1>
+    <h1>Visuliser une étape</h1>
 
     <table class="record_properties table table-striped">
         <tbody>
@@ -12,7 +12,7 @@
                 <td>{{ entity.id }}</td>
             </tr>
             <tr>
-                <th>Name</th>
+                <th>Nom</th>
                 <td>{{ entity.name }}</td>
             </tr>
             <tr>
@@ -25,12 +25,12 @@
         <ul class="record_actions">
     <li>
         <a class="btn btn-warning" href="{{ path('etape') }}">
-            Back to the list
+            Retour
         </a>
     </li>
     <li>
         <a class="btn btn-warning" href="{{ path('etape_edit', { 'id': entity.id }) }}">
-            Edit
+            Éditer
         </a>
     </li>
     <li>{{ form(delete_form) }}</li>

@@ -10,7 +10,7 @@
             <tr>
                 <th>Id</th>
                 <th>Url</th>
-                <th>Alt</th>
+                <th>Nom</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -19,7 +19,7 @@
             <tr>
                 <td><a href="{{ path('photo_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.url }}</td>
-                <td>{{ entity.alt }}</td>
+                <td>{{ entity.name }}</td>
                 <td>
 
                         <a class="btn btn-warning" href="{{ path('photo_show', { 'id': entity.id }) }}">show</a>
@@ -34,7 +34,7 @@
 
 
             <a class="btn btn-warning right" href="{{ path('photo_new') }}">
-                Create a new entry
+                Ajouter une photo
             </a>
 
     {% endblock %}

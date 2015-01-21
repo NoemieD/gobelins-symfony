@@ -31,9 +31,9 @@ class Photo
     /**
      * @var string
      *
-     * @ORM\Column(name="alt", type="string", length=255)
+     * @ORM\Column(name="name", type="string", length=255)
      */
-    private $alt;
+    private $name;
 
     /**
      * Get id
@@ -69,35 +69,35 @@ class Photo
     }
 
     /**
-     * Set alt
+     * Set name
      *
-     * @param string $alt
+     * @param string $name
      * @return Photo
      */
-    public function setAlt($alt)
+    public function setName($name)
     {
-        $this->alt = $alt;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get alt
+     * Get name
      *
      * @return string 
      */
-    public function getAlt()
+    public function getName()
     {
-        return $this->alt;
+        return $this->name;
     }
 
     /**
-     * Get alt
+     * Get name
      *
      * @return string
      */
     public function __toString()
     {
-        return $this->alt;
+        return $this->name;
     }
 }
