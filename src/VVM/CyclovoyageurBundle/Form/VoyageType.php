@@ -19,6 +19,7 @@ class VoyageType extends AbstractType
             ->add('destination')
             ->add('dateDebut')
             ->add('dateFin')
+            ->add('etapes')
         ;
     }
     

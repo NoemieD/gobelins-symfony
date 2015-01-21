@@ -53,12 +53,6 @@ class Etape
      */
     private $arrets;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="VVM\CyclovoyageurBundle\Entity\Voyage", inversedBy="etapes")
-     * @ORM\JoinColumn(name="voyageid", referencedColumnName="id")
-     */
-    private $voyage;
-
 
     /**
      * Constructor
@@ -204,25 +198,12 @@ class Etape
     }
 
     /**
-     * Set voyage
+     * Get name
      *
-     * @param \VVM\CyclovoyageurBundle\Entity\Voyage $voyage
-     * @return Etape
+     * @return string
      */
-    public function setVoyage(\VVM\CyclovoyageurBundle\Entity\Voyage $voyage = null)
+    public function __toString()
     {
-        $this->voyage = $voyage;
-
-        return $this;
-    }
-
-    /**
-     * Get voyage
-     *
-     * @return \VVM\CyclovoyageurBundle\Entity\Voyage 
-     */
-    public function getVoyage()
-    {
-        return $this->voyage;
+        return $this->name;
     }
 }

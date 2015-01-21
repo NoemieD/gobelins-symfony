@@ -242,7 +242,7 @@ class Arret
     }
 
     /**
-     * Get alt
+     * Get name
      *
      * @return string
      */

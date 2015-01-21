@@ -50,10 +50,11 @@ class Voyage
     private $dateFin;
 
     /**
-     * @orm\OneToMany(targetEntity="VVM\CyclovoyageurBundle\Entity\Etape", mappedBy="voyage")
+     * @orm\ManyToMany(targetEntity="VVM\CyclovoyageurBundle\Entity\Etape")
      * @orm\JoinColumn(nullable=false)
      */
     private $etapes;
+
     /**
      * Constructor
      */
@@ -167,8 +168,8 @@ class Voyage
     /**
      * Add etapes
      *
-     * @param \VVM\CyclovoyageurBundle\Entity\Etape $etapes
-     * @return Voyage
+     * @param \VVM\CyclovoyageurBundle\Entity\Arret $arrets
+     * @return Etape
      */
     public function addEtape(\VVM\CyclovoyageurBundle\Entity\Etape $etapes)
     {
@@ -184,13 +185,13 @@ class Voyage
      */
     public function removeEtape(\VVM\CyclovoyageurBundle\Entity\Etape $etapes)
     {
-        $this->etapes->removeElement($etapes);
+        $this->etapes->removeElement($arrets);
     }
 
     /**
      * Get etapes
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getEtapes()
     {
