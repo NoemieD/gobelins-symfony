@@ -21,10 +21,6 @@ body{
     margin: 30px 30px 50px 30px;
 }
 
-.right{
-    float: right;
-    margin-right: 11%;
-}
 
 .login .container-login{
     margin:15% auto;
@@ -45,7 +41,8 @@ input{
 
 input[type="text"],
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+textarea{
     background-color: #ecf0f1;
 }
 h1{
@@ -56,30 +53,55 @@ h1{
     padding-top: 20px;
 }
 
-.register form {
-    width: 300px;
+form {
+    width: 335px;
     margin: auto;
 }
 
-.register form #fos_user_registration_form_email{
-    margin-left:15px;
+form label{
+    width: 160px;
 }
 
-.register form #fos_user_registration_form_plainPassword_first{
-    margin-left:24px;
+form input{
+    width: 170px;
 }
 
-.register form #fos_user_registration_form_plainPassword_second{
-    margin-left:37px;
+form input[type="checkbox"]{
+    width: 13px;
 }
 
-.register form select{
-    margin-left: 95px;
+form .label-checkbox{
+    width: 131px;
 }
 
-.register form input.btn-warning{
-    margin-left: 200px;
-    margin-top: 20px;
+form input.btn{
+    width: initial;
+    margin-bottom: 20px;
+}
+
+form button{
+    color: #fff;
+    background-color: darkslategray;
+    border-color: none;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+}
+
+.btn-margin .btn{
     margin-bottom: 20px;
 }
 

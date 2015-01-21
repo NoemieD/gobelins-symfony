@@ -10,7 +10,7 @@
         <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }}
               method="POST" class="fos_user_registration_register">
             {{ form_widget(form) }}
-            <div>
+            <div class="btn-margin">
                 <input class="btn btn-warning" type="submit" value="{{ 'registration.submit'|trans({}, 'FOSUserBundle') }}" />
             </div>
         </form>
