@@ -21,8 +21,8 @@
                 <td>{{ entity.url }}</td>
                 <td>{{ entity.name }}</td>
                 <td>
-                    <a class="btn btn-warning" href="{{ path('photo_show', { 'id': entity.id }) }}">show</a>
-                    <a class="btn btn-warning" href="{{ path('photo_edit', { 'id': entity.id }) }}">edit</a>
+                    <a class="btn btn-warning" href="{{ path('photo_show', { 'id': entity.id }) }}">Voir</a>
+                    <a class="btn btn-warning" href="{{ path('photo_edit', { 'id': entity.id }) }}">Éditer</a>
                 </td>
             </tr>
         {% endfor %}

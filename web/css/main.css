@@ -85,4 +85,10 @@ h1{
 
 .btn-margin {
     margin: 20px;
+    text-align: center;
+}
+
+.photo-center {
+    margin: 20px;
+    text-align: center;
 }
