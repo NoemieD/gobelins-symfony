@@ -5,7 +5,7 @@
 {% block body -%}
     <h1>Liste des arrêts</h1>
 
-    <table class="records_list">
+    <table class="records_list table table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -29,20 +29,17 @@
                 <td>{{ entity.description }}</td>
                 <td>{{ entity.type }}</td>
                 <td>
-
-                        <a class="btn btn-warning" href="{{ path('arret_show', { 'id': entity.id }) }}">Voir</a>
-
-                        <a class="btn btn-warning" href="{{ path('arret_edit', { 'id': entity.id }) }}">Éditer</a>
-
+                    <a class="btn btn-success" href="{{ path('arret_show', { 'id': entity.id }) }}">Voir</a>
+                    <a class="btn btn-success" href="{{ path('arret_edit', { 'id': entity.id }) }}">Éditer</a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
+    <div class="btn-margin">
+        <a class="btn btn-success" href="{{ path('arret_new') }}">Ajouter un nouvel arrêt</a>
+        <a class="btn btn-success" href="{{ path('vvm_cyclovoyageur_homepage') }}">Retour</a>
+    </div>
 
-            <a class="bnt btn-warning" href="{{ path('arret_new') }}">
-                Ajouter un nouvel arrêt
-            </a>
-
-    {% endblock %}
+{% endblock %}

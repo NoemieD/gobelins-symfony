@@ -38,14 +38,10 @@
         </tbody>
     </table>
 
-
-        <a class="btn btn-warning" href="{{ path('arret') }}">
-            Retour
-        </a>
-
-        <a class="btn btn-warning" href="{{ path('arret_edit', { 'id': entity.id }) }}">
-            Éditer
-        </a>
+    <div class="btn-margin">
+        <a class="btn btn-success" href="{{ path('arret') }}">Retour</a>
+        <a class="btn btn-success" href="{{ path('arret_edit', { 'id': entity.id }) }}">Éditer</a>
+    </div>
 
     {{ form(delete_form) }}
 

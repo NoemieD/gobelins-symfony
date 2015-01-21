@@ -30,14 +30,10 @@
         </tbody>
     </table>
 
-
-        <a class="btn btn-warning" href="{{ path('voyage') }}">
-            Back to the list
-        </a>
-
-        <a class="btn btn-warning" href="{{ path('voyage_edit', { 'id': entity.id }) }}">
-            Edit
-        </a>
+    <div class="btn-margin">
+        <a class="btn btn-primary" href="{{ path('voyage') }}">Retour</a>
+        <a class="btn btn-primary" href="{{ path('voyage_edit', { 'id': entity.id }) }}">Éditer</a>
+    </div>
 
   {{ form(delete_form) }}
 

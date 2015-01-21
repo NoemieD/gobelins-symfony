@@ -22,17 +22,11 @@
         </tbody>
     </table>
 
-        <ul class="record_actions">
-    <li>
-        <a class="btn btn-warning" href="{{ path('etape') }}">
-            Retour
-        </a>
-    </li>
-    <li>
-        <a class="btn btn-warning" href="{{ path('etape_edit', { 'id': entity.id }) }}">
-            Éditer
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+    <div class="btn-margin">
+        <a class="btn btn-danger" href="{{ path('etape') }}">Retour</a>
+        <a class="btn btn-danger" href="{{ path('etape_edit', { 'id': entity.id }) }}">Éditer</a>
+    </div>
+
+    {{ form(delete_form) }}
+
 {% endblock %}

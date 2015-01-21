@@ -5,15 +5,14 @@
 {% block body -%}
     <h1>{{ entity.name }}</h1>
 
-        <div class="center"><img src="{{ entity.url }}" /></div>
+    <div class="center">
+        <img src="{{ entity.url }}" />
+    </div>
 
-        <a class="btn btn-warning " href="{{ path('photo') }}">
-            Retour
-        </a>
-
-        <a class="btn btn-warning" href="{{ path('photo_edit', { 'id': entity.id }) }}">
-            Éditer
-        </a>
+    <div class="btn-margin">
+        <a class="btn btn-warning " href="{{ path('photo') }}">Retour</a>
+        <a class="btn btn-warning" href="{{ path('photo_edit', { 'id': entity.id }) }}">Éditer</a>
+    </div>
 
     {{ form(delete_form) }}
 

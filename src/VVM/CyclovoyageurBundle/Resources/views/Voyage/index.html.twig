@@ -25,20 +25,17 @@
                 <td>{% if entity.dateDebut %}{{ entity.dateDebut|date('Y-m-d') }}{% endif %}</td>
                 <td>{% if entity.dateFin %}{{ entity.dateFin|date('Y-m-d') }}{% endif %}</td>
                 <td>
-
-                        <a class="btn btn-warning" href="{{ path('voyage_show', { 'id': entity.id }) }}">Voir</a>
-
-                        <a class="btn btn-warning" href="{{ path('voyage_edit', { 'id': entity.id }) }}">Éditer</a>
-
+                    <a class="btn btn-primary" href="{{ path('voyage_show', { 'id': entity.id }) }}">Voir</a>
+                    <a class="btn btn-primary" href="{{ path('voyage_edit', { 'id': entity.id }) }}">Éditer</a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-
-            <a class="btn btn-warning" href="{{ path('voyage_new') }}">
-                Create a new entry
-            </a>
+    <div class="btn-margin">
+        <a class="btn btn-primary" href="{{ path('voyage_new') }}">Ajouter un voyage</a>
+        <a class="btn btn-primary" href="{{ path('vvm_cyclovoyageur_homepage') }}">Retour</a>
+    </div>
 
     {% endblock %}

@@ -5,7 +5,7 @@
 {% block body -%}
     <h1>Liste des étapes</h1>
 
-    <table class="records_list">
+    <table class="records_list table table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -21,25 +21,17 @@
                 <td>{{ entity.name }}</td>
                 <td>{{ entity.description }}</td>
                 <td>
-                <ul>
-                    <li>
-                        <a class="btn btn-warning" href="{{ path('etape_show', { 'id': entity.id }) }}">Voir</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-warning" href="{{ path('etape_edit', { 'id': entity.id }) }}">Éditer</a>
-                    </li>
-                </ul>
+                    <a class="btn btn-danger" href="{{ path('etape_show', { 'id': entity.id }) }}">Voir</a>
+                    <a class="btn btn-danger" href="{{ path('etape_edit', { 'id': entity.id }) }}">Éditer</a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
-            <a href="{{ path('etape_new') }}">
-                Ajouter une étape
-            </a>
-        </li>
-    </ul>
+    <div class="btn-margin">
+        <a class="btn btn-danger" href="{{ path('etape_new') }}">Ajouter une étape</a>
+        <a class="btn btn-danger" href="{{ path('vvm_cyclovoyageur_homepage') }}">Retour</a>
+    </div>
+
     {% endblock %}

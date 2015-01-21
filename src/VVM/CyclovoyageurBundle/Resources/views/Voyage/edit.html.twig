@@ -7,12 +7,10 @@
 
     {{ form(edit_form) }}
 
-        <ul class="record_actions">
-    <li>
-        <a class="btn btn-warning" href="{{ path('voyage') }}">
-            Retour
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+    <div class="btn-margin">
+        <a class="btn btn-primary" href="{{ path('voyage') }}">Retour</a>
+    </div>
+
+    {{ form(delete_form) }}
+
 {% endblock %}
